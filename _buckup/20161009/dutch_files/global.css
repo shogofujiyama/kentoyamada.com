@@ -1,0 +1,617 @@
+/*
+	Author: Bryant Hughes : : www.thegoodlab.com
+*/
+/*****************************
+RESETS
+*****************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+} 
+body { line-height: 1 } 
+html { -webkit-font-smoothing: antialiased; }
+article, aside, figure, footer, header, 
+hgroup, nav, section { display: block; }
+
+nav ul { list-style-type: none }
+
+blockquote, q { quotes: none }
+
+blockquote: before, blockquote: after,
+q: before, q: after { content: ''; content: none }
+
+/* remember to define focus styles! */
+: focus { outline: 0;
+}
+
+a { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none;}
+
+ins { background-color: #ff9; color: #000; text-decoration: none }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold }
+
+del { text-decoration: line-through }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted #000; cursor: help }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse: collapse; border-spacing: 0 }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0 }
+
+input, select { vertical-align: middle }
+/* meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/ */
+code, pre { font-family: "Courier New", monospace, serif; font-size: 1em }
+
+/* align checkboxes, radios, text inputs with their label
+ by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css */
+input[type="radio"] { vertical-align: text-bottom }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline }
+.ie6 input { vertical-align: text-bottom }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer }
+
+/*remove text shadow on selection*/
+: : -moz-selection{text-shadow: none }
+: : selection { text-shadow: none } 
+
+button { width: auto; overflow: visible }
+button: : -moz-focus-inner{padding: 0;border: none }
+
+/* bicubic resizing for non-native sized */
+.ie7 img { -ms-interpolation-mode: bicubic }
+/* END RESET CSS */
+
+html, body {
+ margin: 0 0 1px;
+ padding: 0;
+}
+
+html, 
+body.home,
+body.photo
+{
+	height: 100%;
+	min-height: 100%;
+}
+
+/*****************************
+S T A R T
+*****************************/
+body{
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-align: center;
+margin: 0;
+}
+/*****************************
+H E A D E R
+*****************************/
+header{
+ background-color: #fff;
+ position: fixed;
+ padding-top: 15px;
+ width: 100%;
+ z-index: 100;
+height: 72px;
+top: 0;
+text-align: center !important;
+}
+#header-content{
+ margin: 0 auto 0 auto;
+ text-align: center !important;
+/* width: 1010px; */
+}
+header h1{
+ background: transparent url("../images/logo.png") left top no-repeat;
+ height: 29px;
+ height: 23px;
+ margin: 0 auto;
+ text-indent: -999999px;
+ width: 132px;
+ width: 105px;
+}
+header ul{
+ margin: 10px auto;
+ margin-bottom: 1px;
+ text-align: center;
+ /*width: 279px;*/
+ display:inline-block !important;
+}
+header ul li{
+ float: left;
+ line-height: 10px;
+ list-style-type: none;
+ text-transform: uppercase;
+}
+header ul li + li{
+ margin-left: 30px;
+}
+header ul li a{
+ color: #7d7d7d;
+ font-size: 10px;
+ line-height: 10px;
+ text-decoration: none;
+ 
+ -webkit-transition: color 300ms linear;
+ -moz-transition: color 300ms linear;
+ -o-transition: color 300ms linear;
+ transition: color 300ms linear;
+}
+header ul li a: hover,
+header ul li.here a
+{
+	color: #000;
+}
+
+#myID {
+
+}
+
+.here,
+.parent-here
+{
+	font-weight: bold;
+	cursor: default;
+}
+
+/*****************************
+C O N T E N T
+*****************************/
+#content
+{
+	position: relative;
+	margin: auto 0;
+	z-index: 1;
+/*	width: 1010px !important; */
+	width: 80% !important;
+}
+/*****************************
+L A N D I N G
+*****************************/
+#content.home,
+#content.photo
+{
+ padding: 76px 0 0 0;
+ position: relative;
+ margin: 0 auto;
+ text-align: center;
+
+/* width: 1010px; */
+}
+/*****************************
+F A D E
+*****************************/
+#content.fade{
+ padding-top: 76px;
+ position: relative;
+ margin: 0 auto;
+ text-align: center;
+ width: 1010px;
+}
+#content.fade .slideshow{
+ margin: 0 auto;
+}
+.landing-photo{
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 0;
+}
+.landing-photo.active{
+ display: block;
+}
+/*****************************
+P R O J E C T 1
+*****************************/
+#content.project1
+{
+	padding: 76px 0 0 0 !important;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	clear: both;
+}
+
+#content.project1 ul{
+	width: 10000px;
+}
+#content.project1 li{
+ float: left;
+ list-style-type: none;
+ margin-left: 20px;
+}
+
+/*****************************
+P R O J E C T 2
+*****************************/
+#content.project2{
+ margin: 0 auto;
+ padding: 76px 0 0 0;
+ position: relative;
+ text-align: center;
+ width: 1010px;
+}
+#slider-container{
+ height: 650px;
+ margin: 0 auto;
+ overflow: hidden;
+ position: relative;
+ width: 982px;
+}
+#slider-container ul{
+ left: 0;
+ position: absolute;
+ width: 1000000px;
+}
+#slider-container li{
+ float: left;
+ list-style-type: none;
+ width: 982px;
+}
+#slider-nav-prev{
+ background: transparent url("../images/slider-nav-prev.png") left top no-repeat;
+ display: block;
+ height: 35px;
+ left: -60px;
+ margin-top: -10px;
+ position: absolute;
+ top: 50%;
+ width: 20px;
+}
+#slider-nav-next{
+ background: transparent url("../images/slider-nav-next.png") left top no-repeat;
+ display: block;
+ height: 35px;
+ right: -60px;
+ margin-top: -10px;
+ position: absolute;
+ top: 50%;
+ width: 20px;
+}
+
+/*****************************
+I N F O
+*****************************/
+#content.info{
+ color: #555555;
+ font-size: 11px;
+ margin: 0 auto !important;
+ padding: 145px 0 0 0;
+ position: relative;
+ text-align: center !important;
+/* width: 775px; */
+}
+
+#content-inner
+{
+	margin: 0 auto;
+	width: 775px;
+}
+
+#portrait{
+ float: left;
+}
+#info-photo-container{
+ float: left;
+}
+#info-text-container{
+ float: left;
+ margin-left: 25px;
+ text-align: left;
+}
+#info-text-photo, #info-text-film{
+ float: left;
+ margin-top: 30px;
+ text-align: left;
+ width: 200px;
+}
+#info-text-photo p, #info-text-film p{
+ line-height: 14px;
+}
+#info-text-photo p + p, #info-text-film p + p{
+ margin-top: 10px;
+}
+#info-text-photo a, #info-text-film a{
+ color: #363636;
+ text-decoration: none;
+}
+#info-text-photo a: hover, #info-text-film a: hover{
+ color: #000;
+ text-decoration: underline;
+ 
+ -webkit-transition: color 300ms linear;
+ -moz-transition: color 300ms linear;
+ -o-transition: color 300ms linear;
+ transition: color 300ms linear;
+}
+#bio{
+ border-bottom: 1px solid #b2b2b2;
+ font-size: 12px;
+ line-height: 15px;
+ padding-bottom: 10px !important;
+ width: 320px;
+}
+
+.section-title{
+ display: block;
+ font-size: 12px;
+ margin-bottom: 10px;
+}
+.contact-info-containers p{
+ line-height: 13px;
+}
+.contact-info-containers p a{
+ color: #555555;
+ font-weight: bold;
+ text-decoration: none;
+}
+.contact-info-containers p a: hover{
+ color: #000;
+ text-decoration: underline;
+ 
+ -webkit-transition: color 300ms linear;
+ -moz-transition: color 300ms linear;
+ -o-transition: color 300ms linear;
+ transition: color 300ms linear;
+}
+.contact-info-containers p + p{
+ margin-top: 10px;
+}
+
+#info-photo-container{
+ margin-left: 40px;
+}
+#info-film-container{
+ margin-left: 45px;
+}
+
+#content{
+margin-top: 100px;
+}
+
+/*****************************
+F I L M
+*****************************/
+#content.film{
+ padding: 10px 0 0 0;
+display: none;
+}
+
+#content.film ul{
+ top: 50%; 
+ position: absolute;
+ width: 10000px;
+}
+
+#content.film li{
+ float: left;
+ list-style-type: none;
+ margin-left: 20px;
+	position: relative;
+}
+
+/*****************************
+F O O T E R
+*****************************/
+footer{
+ background-color: #fff;
+ bottom: 0;
+ color: #7d7d7d;
+ font-size: 10px;
+ margin: 0 auto;
+ padding-top: 10px !important;
+ padding-bottom: 20px !important;
+/*
+ position: fixed; 
+*/
+ text-align: center;
+ width: 100%;
+ z-index: 1000 !important;
+	margin-top: 0px;
+}
+
+footer ul.subnav + span{
+ display: block;
+ margin-top: 10px;
+}
+/*****************************
+S U B - N A V I G A T I O N
+*****************************/
+ul.subnav{
+ margin: 0 auto;
+ width: 100%;
+}
+ul.subnav li{
+ display: inline;
+ line-height: 10px;
+ list-style-type: none;
+ text-transform: uppercase;
+}
+ul.subnav li + li{
+ margin-left: 30px;
+}
+ul.subnav li a{
+ color: #7d7d7d;
+ font-size: 10px;
+ line-height: 10px;
+ text-decoration: none;
+ 
+ -webkit-transition: color 300ms linear;
+ -moz-transition: color 300ms linear;
+ -o-transition: color 300ms linear;
+ transition: color 300ms linear;
+}
+ul.subnav li a: hover,
+ul.subnav li.here a
+{
+ color: #000;
+}
+
+/*****************************
+MISCELLANEOUS
+*****************************/
+pre { 
+ padding: 15px; 
+ /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+ white-space: pre; /* CSS2 */
+ white-space: pre-wrap; /* CSS 2.1 */
+ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+ word-wrap: break-word; /* IE */
+}
+
+
+/* Hide for both screenreaders and browsers */
+.hidden { display: none; visibility: hidden; } 
+
+/* Hide only visually, but have it available for screenreaders */
+.visuallyhidden { position: absolute !important; 
+ clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+ clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX << */
+.clearfix: after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
+
+.alignLeft{text-align: left}
+.alignCenter{text-align: center}
+.alignRight{text-align: right}
+
+.left{float: left}
+.none{float: none}
+.right{float: right}
+.clear{clear: both}
+.block{display: block}
+
+.mt0{margin-top: 0 !important;}.mt5{margin-top: 5px !important;}.mt10{margin-top: 10px !important;}.mt15{margin-top: 15px !important;}.mt20{margin-top: 20px !important;}.mt25{margin-top: 25px !important;}.mt30{margin-top: 30px !important;}.mt35{margin-top: 35px !important;}.mt40{margin-top: 40px !important;}.mt50{margin-top: 50px !important;}.mt75{margin-top: 75px !important;}.mt100{margin-top: 100px !important;}.mt150{margin-top: 150px !important;}.mt200{margin-top: 200px !important;}
+.mr0{margin-right: 0 !important;}.mr2{margin-right: 2px;}.mr5{margin-right: 5px !important;}.mr10{margin-right: 10px !important;}.mr15{margin-right: 15px !important;}.mr20{margin-right: 20px !important;}.mr25{margin-right: 25px !important;}.mr30{margin-right: 30px !important;}.mr35{margin-right: 35px !important;}.mr40{margin-right: 40px !important;}.mr50{margin-right: 50px !important;}.mr75{margin-right: 75px !important;}.mr100{margin-right: 100px !important;}
+.mb0{margin-bottom: 0 !important;}.mb5{margin-bottom: 5px !important;}.mb10{margin-bottom: 10px !important;}.mb15{margin-bottom: 15px !important;}.mb20{margin-bottom: 20px !important;}.mb25{margin-bottom: 25px !important;}.mb30{margin-bottom: 30px !important;}.mb35{margin-bottom: 35px !important;}.mb40{margin-bottom: 40px !important;}.mb50{margin-bottom: 50px !important;}.mb75{margin-bottom: 75px !important;}.mb100{margin-bottom: 100px !important;}
+.ml0{margin-left: 0 !important;}.ml5{margin-left: 5px !important;}.ml10{margin-left: 10px !important;}.ml15{margin-left: 15px !important;}.ml20{margin-left: 20px !important;}.ml25{margin-left: 25px !important;}.ml30{margin-left: 30px !important;}.ml35{margin-left: 35px !important;}.ml40{margin-left: 40px !important;}.ml50{margin-left: 50px !important;}.ml75{margin-left: 75px !important;}.ml100{margin-left: 100px !important;}
+
+#photoGrid
+{
+	padding-top: 0px;
+	position: relative;
+	border: 0px solid #ccc;
+	width: 100%;
+}
+
+#breadCrumb
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #7d7d7d;
+	font-size: 10px;
+}
+
+#largePhotoGrid 
+{
+	cursor: pointer;
+	margin: 0 auto;
+/*	overflow: hidden; */
+	position: relative;
+	padding: 0;
+	width: auto;
+	width: 100%;
+	padding: 0;
+}
+
+#largePhotoGrid img 
+{
+	display: none;
+	max-height: 680px;
+	max-width: 100% !important;
+	margin-bottom: 80px !important;
+}
+
+.photoWrapper 
+{
+	display: inline-block;
+	height: 130px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0;
+	min-width: 130px;
+}
+
+#gridSwitchWrapper
+{
+	margin-right: 5px;
+}
+
+.scrollGallery
+{
+	padding-top: 25px;
+}
+
+.scrollGallery li .title
+{
+	text-align: right;
+	font-size: 76%;
+	color: #444;
+}
+
+.scrollGallery li .title-overwrite
+{
+	position: absolute;
+	bottom: 4px;
+	padding: 4px 3px;
+	right: 0;
+	background: #fff;
+	z-index: 20;
+	width: 500px;
+	font-size: 12px !important;
+}
+
+/*****************************
+MOBILE STYLES
+*****************************/
+@media all and (orientation: portrait) { 
+ /* Style adjustments for portrait mode goes here */
+ 
+}
+
+@media all and (orientation: landscape) { 
+ /* Style adjustments for landscape mode goes here */
+ 
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome) 
+ Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+
+ /* Prevent iOS, WinMobile from adjusting font size */
+ html { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; } 
+}
+
+#header-content li
+{
+	font-size: 90%;
+}
+
+ul#menu li a
+{
+	font-size: 10px;
+}

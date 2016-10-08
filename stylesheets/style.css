@@ -148,9 +148,9 @@ a:hover {
 @media (max-width: 768px) {
   .common-header__nav__item {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 }
 
@@ -271,7 +271,9 @@ a:hover {
     margin: 0 auto;
   }
 }
-.works-mainview-all {
+.works-main__view-all {
+  width: 100%;
+  text-align: center;
   font-size: 14px;
   color: #4D4D4D;
 }
