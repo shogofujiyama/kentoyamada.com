@@ -147,10 +147,11 @@ a:hover {
 }
 @media (max-width: 768px) {
   .common-header__nav__item {
-    display: block;
-    font-size: 16px;
+    display: inline-block;
+    font-size: 14px;
     padding: 0;
     margin: 10px auto;
+    padding: 10px 10px 10px 10px;
   }
 }
 
