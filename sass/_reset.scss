@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "compass";
+//@import "module";
+body{width: 100%;line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,div{display:block;}
+input, select {vertical-align:middle;}
+a{color: #4D4D4D;}
+.clearfix:after{content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+.clearfix {min-height: 1px;}
+div:after,ul:after,section:after{content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+div,ul,section{min-height: 1px;}
+li {list-style: none}

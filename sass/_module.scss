@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "compass";
+
+%transition{
+	  -webkit-transition:
+    	-webkit-transform 0.42s cubic-bezier(.15,.05,.3,.98),
+    	text-shadow 0.42s cubic-bezier(.37,.28,.54,.95),
+    	opacity 0.3s ease-out,
+    	box-shadow 0.46s cubic-bezier(.27,.35,.48,.99),
+    	color 0.42s cubic-bezier(.42,.17,.45,.98),
+    	background-color 0.26s cubic-bezier(.42,.17,.45,.98);
+
+    -moz-transition:
+    	-moz-transform 0.42s cubic-bezier(.15,.05,.3,.98),
+    	text-shadow 0.42s cubic-bezier(.37,.28,.54,.95),
+    	opacity 0.3s ease-out,
+    	box-shadow 0.46s cubic-bezier(.27,.35,.48,.99),
+    	color 0.42s cubic-bezier(.42,.17,.45,.98),
+    	background-color 0.26s cubic-bezier(.42,.17,.45,.98);
+
+    -ms-transition:
+    	-ms-transform 0.42s cubic-bezier(.15,.05,.3,.98),
+    	text-shadow 0.42s cubic-bezier(.37,.28,.54,.95),
+    	opacity 0.3s ease-out,
+    	box-shadow 0.46s cubic-bezier(.27,.35,.48,.99),
+    	color 0.42s cubic-bezier(.42,.17,.45,.98),
+    	background-color 0.26s cubic-bezier(.42,.17,.45,.98);
+
+    -o-transition:
+    	-o-transform 0.42s cubic-bezier(.15,.05,.3,.98),
+    	text-shadow 0.42s cubic-bezier(.37,.28,.54,.95),
+    	opacity 0.3s ease-out,
+    	box-shadow 0.46s cubic-bezier(.27,.35,.48,.99),
+    	color 0.42s cubic-bezier(.42,.17,.45,.98),
+    	background-color 0.26s cubic-bezier(.42,.17,.45,.98);
+
+    transition:
+    	transform 0.42s cubic-bezier(.15,.05,.3,.98),
+    	text-shadow 0.42s cubic-bezier(.37,.28,.54,.95),
+    	opacity 0.3s ease-out,
+    	box-shadow 0.46s cubic-bezier(.27,.35,.48,.99),
+    	color 0.42s cubic-bezier(.42,.17,.45,.98),
+    	background-color 0.26s cubic-bezier(.42,.17,.45,.98);
+}
