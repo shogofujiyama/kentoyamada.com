@@ -95,22 +95,28 @@ a:hover {
 			margin: 0 auto;
 			padding: 0;
 			text-align: center;
+			margin-left: -10px;
 		}
 		&__item	{
 			display: inline-block;
 			font-size: 14px;
-			padding: 20px 30px 30px 0;
 			@include sp {
 				display: inline-block;
 				font-size: 14px;
 				padding: 0;
 				margin: 10px auto;
-				padding: 10px 10px 10px 10px;
 			}
 		}
 	}
-
 }
+
+li.common-header__nav__item:nth-child(2n) {
+			padding: 20px 30px 30px 20px;
+			@include sp {
+				padding: 10px;
+			}
+		}
+
 
 .main {
 	 animation: fadeIn 2s ease 0s 1 normal;

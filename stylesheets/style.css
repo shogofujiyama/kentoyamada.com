@@ -139,11 +139,11 @@ a:hover {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  margin-left: -10px;
 }
 .common-header__nav__item {
   display: inline-block;
   font-size: 14px;
-  padding: 20px 30px 30px 0;
 }
 @media (max-width: 768px) {
   .common-header__nav__item {
@@ -151,7 +151,15 @@ a:hover {
     font-size: 14px;
     padding: 0;
     margin: 10px auto;
-    padding: 10px 10px 10px 10px;
+  }
+}
+
+li.common-header__nav__item:nth-child(2n) {
+  padding: 20px 30px 30px 20px;
+}
+@media (max-width: 768px) {
+  li.common-header__nav__item:nth-child(2n) {
+    padding: 10px;
   }
 }
 
